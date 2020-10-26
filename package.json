@@ -1,0 +1,17 @@
+{
+  "name": "algoritmia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "dev":"nodemon"
+  },
+  "author": "",
+  "license": "ISC"
+}
