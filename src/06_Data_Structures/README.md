@@ -25,3 +25,7 @@ It's a blueprint for creating objects with pre-defined properties and methods.
 * Indexed in order.
 * Insertion and deletion can be expensive.
 * Can quickly be accessed at specific index.    
+
+**Doubly Linked Lists:**Almost identical to Singly Linked Lists, exept every node has another pointer to the previous node.
+* More memory.
+* More Flexibility.
