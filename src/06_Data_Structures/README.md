@@ -42,3 +42,24 @@ It's a blueprint for creating objects with pre-defined properties and methods.
 * Background tasks.
 * Upload resources.
 * Printing/task processing.
+
+**Trees:** a data struture that consist of nodes in a parent/child relationship. They are no linear.  
+* **Root:** top node in a tree.
+* **Child:** A node directly connected to another node when moving away from the root.
+* **Parent:** The converse notion of a child.
+* **Sibblings:** A group of nodes with the same parent.
+* **Leaf:** A node with no children.
+* **Edge:** The connection between one node to another.
+
+**Uses**
+* HTML DOM.
+* Network Routing.
+* Abstract Syntax Tree (Diagrama de flujo). 
+* Artificial Intelligence.
+* JSON structure.
+
+**Binary Trees Search:**
+* Every parent node has at most two children.
+* Every node to the left of a parent node is always lower than the parent.
+* Every node to the rigth of a parent node is always greater than the parent.
+
