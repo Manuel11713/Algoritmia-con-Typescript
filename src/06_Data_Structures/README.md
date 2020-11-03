@@ -29,3 +29,16 @@ It's a blueprint for creating objects with pre-defined properties and methods.
 **Doubly Linked Lists:**Almost identical to Singly Linked Lists, exept every node has another pointer to the previous node.
 * More memory.
 * More Flexibility.
+
+**Stacks:** it's a LIFO (last in firt out) data structure. The last element added to the stack will be the first element removed from the stack. It's simllar to the callstack in JS.
+
+* Managing functions invocations.
+* Undo / Redo.
+* Routing (the history object ) is treated like a stack.
+* There are many ways to implement a stack.
+
+**Queues:** It's a FIFO(First in First out) data structure.
+
+* Background tasks.
+* Upload resources.
+* Printing/task processing.
