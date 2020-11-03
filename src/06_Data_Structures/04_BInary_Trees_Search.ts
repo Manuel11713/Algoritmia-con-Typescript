@@ -39,7 +39,37 @@ class BinarySearchTree{
         else if(val>currNode.val && currNode.rigth)return this.compareFind(currNode.rigth,val);
         else return false;
     }
+
+    // Breadth First Search
+    BFS(){
+        let node = this.root,
+            data = [],
+            queue = [];
+        if(!node) return [];
+        queue.push(node);
+        while(queue.length){
+            node = queue.shift();
+            data.push(node.val);
+            if(node.left) queue.push(node.left);
+            if(node.rigth) queue.push(node.rigth);
+        }
+        return data;
+    }
+    //Depth First Search
+    DFS(){
+        let data:number[] = [];
+        if(!this.root)return data;
+        return data.concat(this.iteDFS(this.root))
+    }
+    iteDFS(node:any):number[]{
+        let res:number[] = [];
+        res.push(node.val);
+        if(node.rigth)res = res.concat(this.iteDFS(node.rigth));
+        if(node.left)res = res.concat(this.iteDFS(node.left));
+        return res;
+    }
 } 
+
 
 
 let tree = new BinarySearchTree();
@@ -55,5 +85,7 @@ tree.insert(42);
 //console.log(tree.root.rigth,"42");
 tree.insert(87);
 
-console.log(tree);
-console.log(tree.find(88));
+// console.log(tree);
+// console.log(tree.find(88));
+
+console.log(tree.DFS());
