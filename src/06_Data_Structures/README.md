@@ -63,3 +63,9 @@ It's a blueprint for creating objects with pre-defined properties and methods.
 * Every node to the left of a parent node is always lower than the parent.
 * Every node to the rigth of a parent node is always greater than the parent.
 
+**Tree Binary Heaps:** Very similar to a binary search tree, but with some differents rules.
+* In a **MaxBinaryHeap**, parents nodes are always larger than child nodes.
+* In a **MinBinaryHeap**, parents nodes are always smaller than child nodes.
+
+
+**Priority Queue**: A data structure where each element has a priority. Elements with higher priorities are served before priorities 
