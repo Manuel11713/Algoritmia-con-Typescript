@@ -69,3 +69,24 @@ It's a blueprint for creating objects with pre-defined properties and methods.
 
 
 **Priority Queue**: A data structure where each element has a priority. Elements with higher priorities are served before priorities 
+
+
+**HashTable:** are used to store key-value pairs, but the keys are not ordered. Unlike arrays, hash tables are fast for all of the following operations: finding values, adding new values, and removing values.
+Nearly every programming language has some sort of hash table data structure. Because of their speed, hash tables are very commonly used.
+
+##### What makes a good hash?
+* Fast (constant time).
+* Does't cluster outputs at specific indices, but distributes uniformly.
+* Deterministic (same inputs yields same output ).
+
+**Graphs:**A graph data structure consist of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
+
+**Uses:**
+* Social Networks.
+* Location/Mapping.
+* Routing/Algorithms.
+* Visual Hierarchy.
+* File System Optimizations.
+* **Everywhere**
+
+    
