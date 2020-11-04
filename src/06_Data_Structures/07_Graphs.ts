@@ -1,5 +1,5 @@
 interface HashTableGraph{
-    [key:string]:any[]
+    [key:string]:any
 }
 interface VisitedNodes{
     [key:string]:boolean
@@ -57,9 +57,6 @@ class Graph{//We are building and undirected graph
         })(startNode);
 
         return totalNodes;
-    }
-    BFS(){
-        
     }
 }
 let graph = new Graph();

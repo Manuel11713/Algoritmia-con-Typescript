@@ -10,7 +10,7 @@ class NodePQ{
 
 }
 
-class PriorityQueue{
+export class PriorityQueue{
     values:any[];
     constructor(){
         this.values = [];
@@ -32,6 +32,7 @@ class PriorityQueue{
     }
     //Extract Min
     extractMin(){
+        let smallest = this.values[0];
         this.values[0] = this.values[this.values.length-1];
         this.values.pop();
         let fIdx = 0;
@@ -44,7 +45,7 @@ class PriorityQueue{
                 fIdx = 2*fIdx+2;
             }else break;
         }
-        return this.values;
+        return smallest;
     }
 }
 
