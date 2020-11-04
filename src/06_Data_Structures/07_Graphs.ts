@@ -1,6 +1,9 @@
 interface HashTableGraph{
     [key:string]:any[]
 }
+interface VisitedNodes{
+    [key:string]:boolean
+}
 
 class Graph{//We are building and undirected graph
     adjacencyList:HashTableGraph;
@@ -40,6 +43,24 @@ class Graph{//We are building and undirected graph
 
         return this.adjacencyList;
     }
+    DFS(startNode:any){
+        let totalNodes:string[] = [];
+        let visitedNodes:VisitedNodes = {};
+        let adjacencyList = this.adjacencyList;
+        (function checkNode(node:any){
+            visitedNodes[node] = true;
+            totalNodes.push(node);
+
+            for(let neighbor of adjacencyList[node]){
+                if(!visitedNodes[neighbor])checkNode(neighbor);
+            }
+        })(startNode);
+
+        return totalNodes;
+    }
+    BFS(){
+        
+    }
 }
 let graph = new Graph();
 
@@ -59,3 +80,6 @@ console.log(graph.addEdge("CDNX","Buenos Aires"))
 //console.log(graph.removeEdge("CDMX","Buenos Aires"))
 
 console.log(graph.removeVertix("CDMX"));    
+
+
+console.log(graph.DFS("Tokio"));
